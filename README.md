@@ -8,7 +8,7 @@
 
 Kortom: Ik ga een app bouwen die gegevens kan toevoegen, opvragen, bewerken en verwijderen. 
 
-Ik ga gebruik maken van: 
+## Ik ga gebruik maken van: 
 - XAMPP (De lokale server waar de app op draait)
 - PHP (De programmeertaal om de app te kunnen bouwen);
 - MYSQL (database).
@@ -16,7 +16,6 @@ Ik ga gebruik maken van:
 - PHPMYADMIN (databasebeheer)
 
 ### Wat moet daarvoor gebeuren?
-
 1. Aanmaken van een database om de gegevens in op te slaan.
 2. De app connectie laten maken met de database.
 3. Homepagina bouwen (met bootstrap).
