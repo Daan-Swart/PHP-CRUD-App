@@ -8,7 +8,7 @@
 
 Kortom: Ik ga een app bouwen die gegevens kan toevoegen, opvragen, bewerken en verwijderen. 
 
-## Ik ga gebruik maken van: 
+### Ik ga gebruik maken van: 
 - XAMPP (De lokale server waar de app op draait)
 - PHP (De programmeertaal om de app te kunnen bouwen);
 - MYSQL (database).
