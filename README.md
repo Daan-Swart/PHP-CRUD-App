@@ -16,13 +16,13 @@ Kortom: Ik ga een app bouwen die gegevens kan toevoegen, opvragen, bewerken en v
 - PHPMYADMIN (databasebeheer)
 
 ### Wat moet daarvoor gebeuren?
-1. Aanmaken van een database om de gegevens in op te slaan.
-2. De app connectie laten maken met de database.
+1. Aanmaken van een database in PHPMYADMIN.
+2. De app connectie laten maken in PHP (met XAMPP).
 3. Homepagina bouwen (met bootstrap).
 4. Het aanmaken van een header en een footer file, die vervolgens op elke pagina te zien zijn.
-5. De gegevens kunnen opvragen en uitlezen.
-6. Een formulier maken op gegevens te kunnen toevoegen.
-7. Valideren van de formuliergegevens.
+5. De gegevens kunnen opvragen en uitlezen in PHP.
+6. Een formulier maken om gegevens te kunnen toevoegen.
+7. Valideren van de formuliergegevens in PHP.
 8. Het toevoegen van gegevens in MYSQL (met PHP)
-9. Het bewerken van gegevens (met PHP en MYSQL);
-10. Het verwijderen van gegevens (met PHP en MYSQL);    
+9. Het bewerken van gegevens in PHP en MYSQL;
+10. Het verwijderen van gegevens in PHP en MYSQL;    
