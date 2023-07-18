@@ -21,10 +21,79 @@
     margin-top: 50px;
 }
 
-.form-group{
+.form-group {
     margin-bottom: 15px;
 }
 
-.form-group label{
-    margin-bottom: 5px;;
+.form-group label {
+    margin-bottom: 5px;
+    ;
 }
+
+h6 {
+    text-align: center;
+    color: green;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+}
+
+.my-modal {
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding: 1.3rem;
+    min-height: 250px;
+    position: absolute;
+    top: 10%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+
+}
+
+.my-modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    outline: 0;
+
+}
+
+.modal-body {
+    margin-top: 25px;
+}
+
+.modal-footer {
+    margin-top: 5px;
+    gap: 0.5rem;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+}
+
+
