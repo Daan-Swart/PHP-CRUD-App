@@ -2,10 +2,15 @@
 include('header.php');
 include('dbcon.php');
 ?>
-
+<?php
+if (isset($_GET['message'])) {
+    echo "<h6>" . $_GET['message'] . "</h6>";
+}
+?>
 <div class="box1">
     <h2>STUDENTEN</h2>
-    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Student toevoegen</button>
+
+    <a href="data_toevoegen.php"><button class="btn btn-primary">Student toevoegen</button></a>
 </div>
 <table class="table table-hover table-bordered table-striped">
     <thead>
@@ -41,43 +46,6 @@ include('dbcon.php');
         ?>
     </tbody>
 </table>
-<?php
-if(isset($_GET['message'])){
-    echo "<h6>" . $_GET['message'] . "</h6>";
-}
-?>
-
-<!-- Modal -->
-<form action="data_toevoegen.php" method="post">
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Student toevoegen</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label for="voornaam">Voornaam</label>
-                    <input type="text" name="voornaam" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="voornaam">Achternaam</label>
-                    <input type="text" name="achternaam" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="voornaam">Leeftijd</label>
-                    <input type="text" name="leeftijd" class="form-control">
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sluiten</button>
-                <input type="submit" class="btn btn-success" name="toevoegen_studenten" value="Toevoegen">
-            </div>
-        </div>
-    </div>
-</div>
-</form>
 <?php
 include('footer.php');
 ?>
