@@ -41,9 +41,14 @@ include('dbcon.php');
         ?>
     </tbody>
 </table>
+<?php
+if(isset($_GET['message'])){
+    echo "<h6>" . $_GET['message'] . "</h6>";
+}
+?>
 
 <!-- Modal -->
-<form>
+<form action="data_toevoegen.php" method="post">
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -58,16 +63,16 @@ include('dbcon.php');
                 </div>
                 <div class="form-group">
                     <label for="voornaam">Achternaam</label>
-                    <input type="text" name="voornaam" class="form-control">
+                    <input type="text" name="achternaam" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="voornaam">Leeftijd</label>
-                    <input type="text" name="voornaam" class="form-control">
+                    <input type="text" name="leeftijd" class="form-control">
                 </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sluiten</button>
-                <button type="button" class="btn btn-success">Toevoegen</button>
+                <input type="submit" class="btn btn-success" name="toevoegen_studenten" value="Toevoegen">
             </div>
         </div>
     </div>
