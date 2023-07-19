@@ -3,9 +3,6 @@ include('header.php');
 include('dbcon.php');
 ?>
 <?php
-if (isset($_GET['message'])) {
-    echo "<h6>" . $_GET['message'] . "</h6>";
-}
 ?>
 <div class="box1">
     <h2>STUDENTEN</h2>
