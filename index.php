@@ -16,6 +16,9 @@ include('dbcon.php');
             <th>Voornaam</th>
             <th>Achternaam</th>
             <th>Leeftijd</th>
+            <th>Update</th>
+            <th>Delete</th>
+
         </tr>
     </thead>
     <tbody>
@@ -32,6 +35,8 @@ include('dbcon.php');
                     <td><?php echo $row['voornaam'] ?></td>
                     <td><?php echo $row['achternaam'] ?></td>
                     <td><?php echo $row['leeftijd'] ?></td>
+                    <td><a href="update_page_1.php?id=<?php echo $row['id'] ?>" class="btn btn-success">Update</a></td>
+                    <td><a href="delete_page.php?id=<?php echo $row['id'] ?>" class="btn btn-danger">Delete</a></td>
 
                 </tr>
         <?php
