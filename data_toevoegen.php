@@ -20,6 +20,8 @@ include('dbcon.php');
             <th>Voornaam</th>
             <th>Achternaam</th>
             <th>Leeftijd</th>
+            <th>Update</th>
+            <th>Delete</th>
         </tr>
     </thead>
     <tbody>
@@ -39,7 +41,8 @@ include('dbcon.php');
                     <td><?php echo $row['voornaam'] ?></td>
                     <td><?php echo $row['achternaam'] ?></td>
                     <td><?php echo $row['leeftijd'] ?></td>
-
+                    <td><a href="#" class="btn btn-success">Update</a></td>
+                    <td><a href="#" class="btn btn-danger">Delete</a></td>
                 </tr>
         <?php
             }
@@ -65,7 +68,7 @@ if (isset($_POST['toevoegen_studenten'])) {
     $voornaam = $_POST['voornaam'];
     $achternaam = $_POST['achternaam'];
     $leeftijd = $_POST['leeftijd'];
-  
+
 
     if ($voornaam == "" || empty($voornaam) || $achternaam == "" || empty($achternaam) || $leeftijd == "" || empty($leeftijd)) {
         $message = "";
