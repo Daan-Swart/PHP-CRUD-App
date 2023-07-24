@@ -44,10 +44,14 @@ include('dbcon.php');
         } catch (Exception $e) {
             $error = $e->getMessage();
             echo "Query failed: " . $error;
+            die();
         }
         ?>
     </tbody>
 </table>
 <?php
+if(isset($_GET["update_msg"])){
+    echo '<h6 style="color:green;font-weight:500;">'. $_GET["update_msg"]  . '</h6>';
+}
 include('footer.php');
 ?>
