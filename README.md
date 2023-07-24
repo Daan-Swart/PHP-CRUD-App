@@ -24,5 +24,5 @@ Kortom: Ik ga een app bouwen die gegevens kan toevoegen, opvragen, bewerken en v
 6. Een formulier maken om gegevens te kunnen toevoegen. ✅
 7. Valideren van de formuliergegevens in PHP. ✅
 8. Het toevoegen van gegevens in MYSQL (met PHP) ✅
-9. Het bewerken van gegevens in PHP en MYSQL;
+9. Het bewerken van gegevens in PHP en MYSQL; ✅
 10. Het verwijderen van gegevens in PHP en MYSQL;    
